@@ -1,0 +1,201 @@
+*{
+  font-family: 'Lucida Grande', monospace;
+}
+html{
+    background-color: bisque;
+}
+.parent > ul {
+    text-align: center;
+    display: inline-block;
+}
+h1 {     
+  font-weight: bold;
+  font-size:50px;
+  text-align:center;
+  color: maroon;
+}
+p {
+  font-weight: bold;
+  font-family: courier, monospace;
+  font-size:30px;
+  text-align:center;
+  color: black;
+}
+a {
+    font-size: 20px;
+    font-weight: bold;
+    color :rgb(220, 192, 151);
+    text-decoration: none;
+}
+h3 { 
+  font-weight: 100;
+  font-family: Lucida Grande, monospace;
+  font: size 30x;
+  text-align:center;
+  color: black;
+}
+.fa:hover {
+    opacity: 0.8;
+}
+.fa-linkedin {
+    background: rgb(128, 16, 16);
+    color: white;
+    text-shadow:0 0 3px #000;
+
+}
+.fa-instagram{
+  background: #ba713e;
+  color: white;
+  text-shadow: 0 0 3px #000;
+}
+.fa-github{
+  background: #351801;
+  color: white;
+  text-shadow: 0 0 3px #000;
+}
+.fa-envelope {
+    background: #7c8c93;
+    color: white;
+    text-shadow: 0 0 3px #000;
+}
+.fa{
+    padding: 20px;
+    font-size: 60px;
+    height: 55px;
+    width: 60px;
+    text-decoration: none;
+    margin: 10px 10px;
+}
+.button {
+    background-color: darkslateblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  img {
+    align-self: center;
+    margin: 30px 30px;
+  }
+  .co {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+    height: 100px;
+  }
+  .cyc{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 192px;
+  }
+  .hab{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 100px;
+  }
+  .hyper{
+    text-align:center;
+    
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+  }
+  .maroon-bg {
+  background-color: maroon;
+  }
+ .box-header{
+    background-color: rgb(204, 157, 126);
+    height: 75px;
+    border: 4px solid rgb(72, 34, 10);
+  }
+  .box-first{
+    background-color: rgb(175, 123, 67);
+    border: 1px solid black;
+    /* size */
+    width: 15%;
+    height: 30px;
+
+    /* positioning */
+    position: absolute;
+    left: 14.2%;
+    top: 3.4%;
+
+    /* Text */
+    margin: auto; 
+    text-align: center;
+    padding-top: 8px;
+  }
+  .box-second{
+    background-color: rgb(175, 123, 67);
+    border: 1px solid black;
+    /* size */
+    width: 15%;
+    height: 30px;
+
+    /* positioning */
+    position: absolute;
+    left: 33.2%;
+    top: 3.4%;
+
+    /* Text */
+    margin: auto; 
+    text-align: center;
+    padding-top: 8px;
+  }
+  .box-third{
+    background-color: rgb(175, 123, 67);
+    border: 1px solid black;
+    /* size */
+    width: 15%;
+    height: 30px;
+
+    /* positioning */
+    position: absolute;
+    left: 51.2%;
+    top: 3.4%;
+
+    /* Text */
+    margin: auto; 
+    text-align: center;
+    padding-top: 8px;
+  }
+  .box-fourth{
+    background-color: rgb(175, 123, 67);
+    border: 1px solid black;
+    /* size */
+    width: 15%;
+    height: 30px;
+
+    /* Text */
+    margin: auto; 
+    text-align: center;
+    padding-top: 8px;
+    /* positioning */
+    position: absolute;
+    left: 69.5%;
+    top: 3.4%;
+  }
+  .box-side{
+    width:12%;
+    height : 500px;
+    top: 100px;
+    left: 87%;
+    position: absolute;
+    border: 4px solid rgb(72, 34, 10);
+    padding-top: 30px;
+    background-color: rgb(204, 157, 126);
+  }
