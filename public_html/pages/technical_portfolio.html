@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <meta charset="UTF-8"> -->
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
     <link id = "currentstyle" rel="stylesheet" href="../style1.css">
     <script>
       function toggleStyle(){
         let layout = document.getElementById("currentstyle").getAttribute('href');
-        if(layout == "style1.css"){
+        if(layout == "../style1.css"){
           document.getElementById("currentstyle").setAttribute('href', '../style2.css');
         }
         else{
@@ -14,6 +15,11 @@
         }
         localStorage.setItem("style", document.getElementById("pagestyle").getAttribute('href'))
       }
+      function applystyle(){
+        const sheet = localStorage.getItem('style') || 'style1.css';
+        document.getElementById('pagestyle').getAttribute('href', sheet);
+      }
+      applystyle();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -25,28 +31,37 @@
   
   <main>
     <section id="technical_portfolio">
-      <div>  <h1><centre>Technical Portfolio</centre></h1></div>
+      <div class = "box-header" style="text-align:center;">
+        <div>
+        <a id = "pag" class = "box-first" href="../index.html">Landing</a></div>
+        <a id = "pag" class = "box-second" href="qualifications.html">Qualifications</a>
+        <a id = "pag" class = "box-third" href="service.html">Services</a>
+        <a id = "pag" class = "box-fourth" href="AIGenerated.html">AI Generated</a>
+    </div>
       
-      <!-- <p><centre>Technical Portfolio</centre></p> -->
+      <div class = "box-intro"> 
         
-        <h3><centre>As a computer science student, building projects to refine your skills is important.
-        </centre></h3>
-        <h4> <center>Currently, all of the A&M Ice Hockey team's games are disorganized and hosted on an outdated and cluttered website.
-          In the future,<br> I'd like to create a program that hosts and organizes our footage which would allow for easy review and improvement as a team. </center></h4>
-        <img src="hockey.png" alt="A&M Hockey" class="center">
-        <h4><center>Any and all future proejcts can be found here at my Github listed below</center></h4>
-        <div style="text-align:center;">
-          <a href="https://github.com/ethanchen2003" target="_blank"class="fa fa-github"></a>
+        <div>
+          <a href="https://github.com/ethanchen2003" target="_blank"> <h5> Check out my Github here! </h5></a>
         </div>
-    </section>
-
-    <header>
-      <div style="text-align:center;">
-        <a href="../index.html">Landing</a>
-        <a href="technical_portfolio.html">Technical Portfolio</a>
-        <a href="qualifications.html">Qualifications</a>
-        <a href="service.html">Service</a>
-        <a href="AIGenerated.html">AI Generated</a>
+        <h1>Technical Portfolio</h1>
+        <h3>Future project ideas
+        </h3>
+        
       </div>
-  </header>
+      <div class = "box-content">
+        <h4> I've played hockey for almost as long as I could stand, I'd love to apply my study of computer science to my love of hockey.
+          Currently, all of the Texas A&M Ice Hockey team's games are disorganized and hosted on an outdated and cluttered website, that not only has our own games behind a paywall
+          but also ruins the experience of watching footage by only allowing on user at a time. In the future, I'd like to create a database that hosts and organizes our game film in 
+          a way that not only allows for a better user experience, but also lets us as a team review specific parts of our play, which would allow for even greater improvement as a team.</h4>          
+      </div>
+      <div class = "image-hockey">
+        <img src="hockey.png" alt="A&M Hockey" class="center">
+      </div>
+        <button  id = "currentstyle" class = "toggle-button" onclick = "toggleStyle()"> Toggle Style</button>
+
+        
+        
+        
+       
 </body>

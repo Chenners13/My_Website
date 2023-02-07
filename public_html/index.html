@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
     <!-- <meta charset="UTF-8"> -->
     <link id = "currentstyle" rel="stylesheet" href="style1.css">
     <script>
@@ -14,9 +16,15 @@
         }
         localStorage.setItem("style", document.getElementById("pagestyle").getAttribute('href'))
       }
-    </script>
+      function applystyle(){
+        const sheet = localStorage.getItem('style') || 'style1.css';
+        document.getElementById('pagestyle').getAttribute('href', sheet);
+      }
+      applystyle();
+    </script> 
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href=
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Ethan Chen - Personal Webpage</title>
@@ -26,22 +34,35 @@
   
   <main>
       <div class = "box-header" style="text-align:center;">
-          <div><a class = "box-first" href="pages/technical_portfolio.html">Technical Portfolio</a></div>
-          <a class = "box-second" href="pages/qualifications.html">Qualifications</a>
-          <a class = "box-third" href="pages/service.html">Services</a>
-          <a class = "box-fourth" href="pages/AIGenerated.html">AI Generated</a>
+          <div>
+          <a id = "pag" class = "box-first" href="pages/technical_portfolio.html">Technical Portfolio</a></div>
+          <a id = "pag" class = "box-second" href="pages/qualifications.html">Qualifications</a>
+          <a id = "pag" class = "box-third" href="pages/service.html">Services</a>
+          <a id = "pag" class = "box-fourth" href="pages/AIGenerated.html">AI Generated</a>
       </div>
-        <h1><center>Ethan Chen</center></h1>
-        <h3><center><strong>Computer Science at Texas A&M University</strong></center></h3>
+        <div class = "box-intro"> 
+          <h5>Hello, my name is</h5>
+         <h1>Ethan Chen</h1>
+        <h3><strong>Computer Science at Texas A&M</strong></h3>
+      
+      </div>
+        
         <div class = "box-side" style = "text-align: center;">
           <a href="https://www.linkedin.com/in/ethan-chen-580523209/" target="_blank"class="fa fa-linkedin fa-3x"></a><br>  
           <a href="https://github.com/ethanchen2003" target="_blank"class="fa fa-github fa-3x"></a><br> 
           <a href="https://www.instagram.com/chenners13/"target="_blank" class="fa fa-instagram fa-3x"></a><br> 
           <a href = "mailto:ethan.chen2003@gmail.com?subject = Feedback&body = Message" target="_blank"class="fa fa-envelope fa-3x"></a><br>  
         </div>
-        <h4><center> I am currently a sophomore pursuing a degree in Computer Science. <br>I am passionate about using my skills as a computer scientist in order to solve real-world problems. As a student, I am always seeking oppurtunities to grow and to challenge myself everyday</center></h4>
-        <h4><center>I spend my free time as a part of the <a href="https://www.tamuicehockey.com" target="_blank">TAMU Ice Hockey</a> team and the <a href="https://tamuacpc.com" target="_blank">Aggie Competitive Programming Club</a>.</center></h4>
-    <header>
-      <button id = "currentstyle" onclick = "toggleStyle()"> Toggle</button>
-    </header>
+        <div class = box-content>
+          <h4> I am currently a sophomore pursuing a degree in Computer Science
+            . I am passionate about using my skills as a computer scientist in order
+            to solve real-world problems. As a student, I am always seeking oppurtunities
+             to grow and to challenge myself everyday. I spend my free time working out and also as a part of 
+             the <a id = "ext" href="https://www.tamuicehockey.com" target="_blank">TAMU Ice Hockey</a> team and the <a id = "ext" href="https://tamuacpc.com" target="_blank">Aggie Competitive
+               Programming Club </a>
+            </h4>
+        </div>
+
+      <button  id = "currentstyle" class = "toggle-button" onclick = "toggleStyle()"> Toggle Style</button>
+
 </body>

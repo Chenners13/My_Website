@@ -1,0 +1,300 @@
+  html{
+      background-image: url("background.JPG");
+      background-size: 2000px 1000px;
+  }
+  ul {
+      text-align: left;
+      display: inline-block;
+      list-style-type: none;
+  }
+  ul li:before{
+    content: "\f0da";
+    text-align: left;
+  }
+  h1 {     
+    text-indent: 300px;
+    font-weight: bold;
+    font-size:20px;
+    color: white;
+    font-family: 'Lexend';
+  }
+  h3 { 
+    text-indent: 300px;
+    font-family: 'Lexend';
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+  }
+  h4{
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+    font-family: 'Lexend';
+  }
+  p {
+    font-weight: bold;
+    font-family: courier, monospace;
+    font-size:30px;
+    text-align:center;
+    color: black;
+  }
+  
+  
+  #pag{
+    font-size:80px;
+    font-family: 'Orbitron';
+
+    color :white;
+    text-decoration: none;
+  }
+  #ext{
+      font-size: 12px;
+      color : whitesmoke;
+
+  }
+  #ext:hover{
+    font-style: italic;
+  }
+  #pag:hover{
+    font-style: italic;
+  }
+  a{
+    text-decoration-color: white;
+  }
+  h5{
+    text-indent: 300px;
+    color: white;
+    font-family: 'Lexend';
+
+  }
+  .fa:hover {
+      opacity: 0.8;
+  }
+  .fa-linkedin {
+      /* background: rgb(128, 16, 16); */
+      color: white;
+      text-shadow:0 0 3px #000;
+  
+  }
+  .fa-instagram{
+    /* background: #ba713e; */
+    color: white;
+    text-shadow: 0 0 3px #000;
+  }
+  .fa-github{
+    /* background: #351801; */
+    color: white;
+    text-shadow: 0 0 3px #000;
+  }
+  .fa-envelope {
+      /* background: #7c8c93; */
+      color: white;
+      text-shadow: 0 0 3px #000;
+  }
+  .fa{
+      padding: 20px;
+      font-size: 60px;
+      height: 55px;
+      width: 60px;
+      text-decoration: none;
+      margin: 10px 10px;
+  }
+  .toggle-button{
+      border: 3px solid maroon;
+      font-family: Andale Mono, monospace;
+      color: maroon;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute;
+      left: 40px;
+      top: 730px;
+    }
+    img {
+      align-self: center;
+      margin: 30px 30px;
+    }
+    .co {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 275px;
+      height: 100px;
+      position: absolute;
+      left:550px;
+      top: 10px;
+    }
+    .cyc{
+      position: absolute;
+      left: 550px;
+      top: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+      height: 165px;
+    }
+    .hab{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+      height: 160px;
+      position: absolute;
+      left: 550px;
+      top: 200px;
+    }
+    .hyper{
+      text-align:center;
+      
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      height: 200px;
+    }
+    .maroon-bg {
+    background-color: maroon;
+    }
+    .box-first{
+      border: 1px solid black;
+      /* size */
+      width: 70%;
+      height: 100px;
+  
+      /* positioning */
+      position: absolute;
+      left: 40%;
+      top: 17%;
+  
+      /* Text */
+      margin: auto; 
+      text-align: left;
+      padding-top: 8px;
+    }
+    .box-second{
+
+      border: 1px solid black;
+      /* size */
+      width: 70%;
+      height: 60px;
+  
+      /* positioning */
+      position: absolute;
+      left: 40%;
+      top: 37%;
+  
+      /* Text */
+      margin: auto; 
+      text-align: left;
+      padding-top: 8px;
+    }
+    .box-third{
+
+      border: 1px solid black;
+      /* size */
+      width: 70%;
+      height: 60px;
+  
+      /* Text */
+      margin: auto; 
+      text-align: left;
+      padding-top: 8px;
+      /* positioning */
+      position: absolute;
+      left: 40%;
+      top: 57%;
+    }
+    .box-fourth{
+
+      border: 1px solid black;
+      /* size */
+      width: 70%;
+      height: 60px;
+  
+      /* Text */
+      margin: auto; 
+      text-align: left;
+      padding-top: 8px;
+      /* positioning */
+      position: absolute;
+      left: 40%;
+      top: 78%;
+    }
+    .box-side{
+        /* background-color: rgb(204, 157, 126); */
+        height: 75px;
+        opacity: 0.4;
+        padding-top: 2px;
+        /* border: 4px solid rgb(72, 34, 10); */
+        position: absolute;
+        left: 10px;
+    }
+    .box-intro{
+      line-height: 15px;
+      position: absolute;
+      width: 75%;
+      height: 150px;
+      /* border: 1px solid black; */
+      left: -200px;
+      top:430px;
+    }
+    .box-content{
+      position: absolute;
+      line-height: 20px;
+      width: 30%;
+      height: 150px;
+      /* border: 1px solid black; */
+      top: 540px;
+      left: 100px;
+    }
+    .image-hockey{
+      position: absolute;
+      top: 325px;
+      left: 345px;
+    }
+    .box-list{
+      position: absolute;
+      line-height: 20px;
+      /* border: 1px solid black; */
+      top: 575px;
+      left: 40px;
+    }
+    .box-list2{
+      position: absolute;
+      line-height: 20px;
+      /* border: 1px solid black; */
+      top: 575px;
+      left: 350px;
+    }
+    .list-title{
+      text-align: left;
+      font-size: 20px;
+      color: white;
+      opacity: 0.8;
+      text-indent: 15px;
+      font-weight: bold;
+      position: absolute;
+      left: 20px;
+    }
+    .box-list-service{
+      position: absolute;
+      line-height: 20px;
+      font-family: 'Lexend';
+      top: 950px;
+      left: 100px;
+      width: 30%;
+    }
+    .list-title-service{
+      font-family: 'Lexend';
+
+      text-align: left;
+      font-weight: 100;
+      font-size: 30px;
+      opacity: 0.8;
+      color: white;
+    }
