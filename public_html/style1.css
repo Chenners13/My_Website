@@ -240,7 +240,7 @@ h5{
   .box-content{
     position: absolute;
     line-height: 20px;
-    width: 40%;
+    width: 30%;
     height: 150px;
     /* border: 1px solid black; */
     top: 425px;
@@ -249,7 +249,7 @@ h5{
   .image-hockey{
     position: absolute;
     top: 375px;
-    left: 1000px;
+    left: 1200px;
   }
   .box-list{
     position: absolute;

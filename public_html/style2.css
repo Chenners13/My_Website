@@ -43,7 +43,6 @@
   #pag{
     font-size:80px;
     font-family: 'Orbitron';
-
     color :white;
     text-decoration: none;
   }
@@ -160,8 +159,10 @@
     .maroon-bg {
     background-color: maroon;
     }
+    .box-header{
+      box-align: left;
+    }
     .box-first{
-      border: 1px solid black;
       /* size */
       width: 70%;
       height: 100px;
@@ -176,9 +177,10 @@
       text-align: left;
       padding-top: 8px;
     }
+  
     .box-second{
 
-      border: 1px solid black;
+
       /* size */
       width: 70%;
       height: 60px;
@@ -194,8 +196,6 @@
       padding-top: 8px;
     }
     .box-third{
-
-      border: 1px solid black;
       /* size */
       width: 70%;
       height: 60px;
@@ -208,10 +208,9 @@
       position: absolute;
       left: 40%;
       top: 57%;
+      /* border: 1px solid black; */
     }
     .box-fourth{
-
-      border: 1px solid black;
       /* size */
       width: 70%;
       height: 60px;
@@ -291,7 +290,6 @@
     }
     .list-title-service{
       font-family: 'Lexend';
-
       text-align: left;
       font-weight: 100;
       font-size: 30px;

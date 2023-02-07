@@ -6,23 +6,25 @@
     <!-- <meta charset="UTF-8"> -->
     <link id = "currentstyle" rel="stylesheet" href="style1.css">
     <script>
+      // document.cookie =  "style1.css";
       function toggleStyle(){
         let layout = document.getElementById("currentstyle").getAttribute('href');
         if(layout == "style1.css"){
           document.getElementById("currentstyle").setAttribute('href', 'style2.css');
+          document.cookie = 'style2.css';
         }
         else{
           document.getElementById("currentstyle").setAttribute('href', 'style1.css');
+          document.cookie = 'style1.css';
         }
-        localStorage.setItem("style", document.getElementById("pagestyle").getAttribute('href'))
+        localStorage.setItem('style', document.getElementById("currentstyle").getAttribute('href'))
       }
-      function applystyle(){
+      function applyStyleSheet(){
         const sheet = localStorage.getItem('style') || 'style1.css';
-        document.getElementById('pagestyle').getAttribute('href', sheet);
+        document.getElementById('currentstyle').setAttribute('href', sheet);
       }
-      applystyle();
+      applyStyleSheet();
     </script> 
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href=
@@ -33,12 +35,12 @@
 <body>
   
   <main>
-      <div class = "box-header" style="text-align:center;">
+      <div class = "box-header" style="text-align:left;">
           <div>
-          <a id = "pag" class = "box-first" href="pages/technical_portfolio.html">Technical Portfolio</a></div>
-          <a id = "pag" class = "box-second" href="pages/qualifications.html">Qualifications</a>
-          <a id = "pag" class = "box-third" href="pages/service.html">Services</a>
-          <a id = "pag" class = "box-fourth" href="pages/AIGenerated.html">AI Generated</a>
+          <a id = "pag" class = "box-first" href="technical_portfolio.html">Technical Portfolio</a></div>
+          <a id = "pag" class = "box-second" href="qualifications.html">Qualifications</a>
+          <a id = "pag" class = "box-third" href="service.html">Services</a>
+          <a id = "pag" class = "box-fourth" href="AIGenerated.html">AI Generated</a>
       </div>
         <div class = "box-intro"> 
           <h5>Hello, my name is</h5>
@@ -51,7 +53,7 @@
           <a href="https://www.linkedin.com/in/ethan-chen-580523209/" target="_blank"class="fa fa-linkedin fa-3x"></a><br>  
           <a href="https://github.com/ethanchen2003" target="_blank"class="fa fa-github fa-3x"></a><br> 
           <a href="https://www.instagram.com/chenners13/"target="_blank" class="fa fa-instagram fa-3x"></a><br> 
-          <a href = "mailto:ethan.chen2003@gmail.com?subject = Feedback&body = Message" target="_blank"class="fa fa-envelope fa-3x"></a><br>  
+          <a href = "mailto:ethan.chen2003@gmail.com" target="_blank"class="fa fa-envelope fa-3x"></a><br>  
         </div>
         <div class = box-content>
           <h4> I am currently a sophomore pursuing a degree in Computer Science

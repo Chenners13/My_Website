@@ -3,23 +3,25 @@
   <head>
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
-    <link id = "currentstyle" rel="stylesheet" href="../style1.css">
+    <link id = "currentstyle" rel="stylesheet" href="style1.css">
     <script>
       function toggleStyle(){
         let layout = document.getElementById("currentstyle").getAttribute('href');
-        if(layout == "../style1.css"){
-          document.getElementById("currentstyle").setAttribute('href', '../style2.css');
+        if(layout == "style1.css"){
+          document.getElementById("currentstyle").setAttribute('href', 'style2.css');
+          document.cookie = 'style2.css';
         }
         else{
-          document.getElementById("currentstyle").setAttribute('href', '../style1.css');
+          document.getElementById("currentstyle").setAttribute('href', 'style1.css');
+          document.cookie = 'style1.css';
         }
-        localStorage.setItem("style", document.getElementById("pagestyle").getAttribute('href'))
+        localStorage.setItem('style', document.getElementById("currentstyle").getAttribute('href'))
       }
-      function applystyle(){
+      function applyStyleSheet(){
         const sheet = localStorage.getItem('style') || 'style1.css';
-        document.getElementById('pagestyle').getAttribute('href', sheet);
+        document.getElementById('currentstyle').setAttribute('href', sheet);
       }
-      applystyle();
+      applyStyleSheet();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -32,9 +34,9 @@
   <main>
     <div class = "box-header" style="text-align:center;">
       <div>
-      <a id = "pag" class = "box-first" href="../index.html">Landing</a></div>
+      <a id = "pag" class = "box-first" href="index.html">Landing</a></div>
       <a id = "pag" class = "box-second" href="technical_portfolio.html">Technical Portfolio</a>
-      <a id = "pag" class = "box-third" href="qualifications.html">Services</a>
+      <a id = "pag" class = "box-third" href="qualifications.html">Qualifications</a>
       <a id = "pag" class = "box-fourth" href="AIGenerated.html">AI Generated</a>
   </div>
     <section id="technical_portfolio">
@@ -43,13 +45,13 @@
         <h1><centre>Services</centre></h1>
       </div>
       <div class = "box-list-service">
-        <div class = "list-title-service">Internship Summer 2023</div>
+        <a class = "list-title-service" href="https://www.capitalonecareers.com/internship-programs" target="_blank">Summer Internship 2023</a>
         <h4>After not receiving a single offer for an internship freshman year, I was a bit nervous heading into my sophomore year. Throughout the course of sophomore year first semester, I had slowly accumulated more an 
           more rejections year passed. I didn't have much hope for my interview at Capital One that was scheduled near the end of the year even though I had applied all the way back in August. Much to my surprise, however,
            I received the offer, and I'm happy to say that this summer, I will be interning at Capital One as a part of their Technology Internship Program (TIP) in Plano, Texas</h4>
         <img src="Capital_One.png" alt="A&M Hockey" class="co">
-
-        <div class = "list-title-service">Habitat for Humanity 2022</div>
+        
+        <a class = "list-title-service" href="https://habitatbcs.org" target="_blank">Habitat for Humanity 2022</a>
         <h4> During my freshmen year, I had tried out out for the hockey team and the team was looking forward to have me. Unfortunately, I came
           to the decision to not join the team before the season started in order to focus more on myself and my studies, especially for ETAM. As a result, I imagine that the
           members of the team did not view me in the best way, and therefore this volunteering oppurtunity was the first team bonding event that I had been apart of.
@@ -57,8 +59,8 @@
           allow children to sleep. It felt good not only bonding with my teammates for the first time, but also serving a good cause.
         </h4>
         <img src="hfh" alt="A&M Hockey" class="hab">
-
-        <div class = "list-title-service">Chinese Youth Camp 2018-2020 </div>
+        
+        <a class = "list-title-service" href="https://www.facebook.com/DFWCYC/" target="_blank">Chinese Youth Camp 2018-2020 </a>
         <h4>For as long as I could remember, I attended a camp a chinese camp called CYC. To my young self, this camp was the week of the year that I looked
           forward to the most, and I my counselors had a lot to do with the experience I had. I knew that when I was old enough, I wanted to 
           give back and do the same thing. For 3 years, I was an assistant counselor at CYC where, for six days, I was tasked with taking care of a group of 20-30 campers.
